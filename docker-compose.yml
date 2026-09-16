@@ -1,0 +1,8 @@
+name : ceksu-wed
+
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
