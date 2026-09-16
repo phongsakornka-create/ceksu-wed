@@ -1,8 +1,14 @@
-name : ceksu-wed
-
+name: 671540005008-1-badge
 
 services:
-  web:
+  mybadge:
     build: .
     ports:
       - "8080:80"
+    restart: unless-stopped
+
+  friend:
+    image: kittiphat26/ceksu-badge:1.0
+    ports:
+      - "8081:80"
+    restart: unless-stopped
